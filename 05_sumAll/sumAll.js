@@ -1,8 +1,16 @@
 const sumAll = function (from, to) {
-  let output;
-  for (let i = from; i < to; i++) {
+  let output = 0;
+  if (from > to) {
+    let newFrom = to;
+    let newTo = from;
+    for (let i = newFrom; i <= newTo; i++) {
+      output += i;
+    }
+  }
+  for (let i = from; i <= to; i++) {
     output += i;
   }
+  return output;
 };
 //code finished
 // Do not edit below this line
