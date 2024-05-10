@@ -9,9 +9,9 @@ const sumAll = function (from, to) {
   const numbers = [10, 20, 30, 40];
 
   // Skips the second element
-  const [first, , last] = numbers;
+  const [first, , third] = numbers;
   console.log(first);
-  console.log(last);
+  console.log(third);
   return output;
 };
 //code finished
