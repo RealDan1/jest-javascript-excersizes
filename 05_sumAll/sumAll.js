@@ -4,6 +4,6 @@ const sumAll = function (from, to) {
     output += i;
   }
 };
-
+//code finished
 // Do not edit below this line
 module.exports = sumAll;
