@@ -1,15 +1,17 @@
 const sumAll = function (from, to) {
   let output = 0;
   if (from > to) {
-    let newFrom = to;
-    let newTo = from;
-    for (let i = newFrom; i <= newTo; i++) {
-      output += i;
-    }
+    [from, to] = [to, from];
   }
   for (let i = from; i <= to; i++) {
     output += i;
   }
+  const numbers = [10, 20, 30, 40];
+
+  // Skips the second element
+  const [first, , last] = numbers;
+  console.log(first);
+  console.log(last);
   return output;
 };
 //code finished
