@@ -3,7 +3,7 @@ const removeFromArray = function (inputs, ...rest) {
     if (inputs.includes(item)) {
       let atIndexToRemove = inputs.indexOf(item);
       inputs.splice(atIndexToRemove, 1);
-      while (inputs.includes(item)) {
+      if (inputs.includes(item)) {
         let atIndexToRemove = inputs.indexOf(item); //swap this line with continue
         inputs.splice(atIndexToRemove, 1); //swap this line with continue
         // continue outerloop1;
