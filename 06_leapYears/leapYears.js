@@ -4,8 +4,11 @@ const leapYears = function (inputYear) {
     (inputYear % 4 === 0 || inputYear % 400 === 0) &&
     !(inputYear % 100 === 0)
     // divisible by 100 and 400 is conflicting? 1600 returns false
+    //try inputting just the two or statements on the first if, then !(100) on the
+    //second and another bolean to confirm for the conflicting scenario. Should work
   ) {
     isLeapYear = true;
+    //
   }
 
   return isLeapYear;
