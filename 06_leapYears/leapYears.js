@@ -1,15 +1,22 @@
 const leapYears = function (inputYear) {
   let isLeapYear = false;
-  if (
-    (inputYear % 4 === 0 || inputYear % 400 === 0) &&
-    !(inputYear % 100 === 0)
-    // divisible by 100 and 400 is conflicting? 1600 returns false
-    //try inputting just the two or statements on the first if, then !(100) on the
-    //second and another bolean to confirm for the conflicting scenario. Should work
-  ) {
+  if (inputYear % 4 === 0) {
+    if (inputYear % 400 === 0) {
+      if (!(inputYear % 100 === 0)) {
+        isLeapYear = false;
+      } else {
+        isLeapYear = true;
+      }
+    } 
+  } else {
     isLeapYear = true;
-    //
   }
+  // divisible by 100 and 400 is conflicting? 1600 returns false
+  //try inputting just the two or statements on the first if, then !(100) on the
+  //second and another bolean to confirm for the conflicting scenario. Should work
+
+  //|| inputYear % 400 === 0) &&
+  // !(inputYear % 100 === 0)
 
   return isLeapYear;
 };
