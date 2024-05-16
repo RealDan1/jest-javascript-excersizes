@@ -1,13 +1,11 @@
 const convertToCelsius = function (farhenheitInput) {
   let celsiusOutput = (farhenheitInput - 32) * (5 / 9);
-  celsiusOutput = celsiusOutput.toFixed(1);
-  return Number(celsiusOutput);
+  return Number(celsiusOutput.toFixed(1));
 };
 
 const convertToFahrenheit = function (celsiusInput) {
   let farhenheitOutput = celsiusInput * (9 / 5) + 32;
-  farhenheitOutput = farhenheitOutput.toFixed(1);
-  return Number(farhenheitOutput);
+  return Number(farhenheitOutput.toFixed(1));
 };
 
 // Do not edit below this line
